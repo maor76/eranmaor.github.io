@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>המתכונים שלי — My Recipe Book</title>
+<style>
+  :root{
+    --bg:#fbf9f6; --card:#ffffff; --ink:#22201d; --muted:#6b645c;
+    --line:#e6e0d8; --accent:#8a5a2b;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#171513; --card:#201d1a; --ink:#f2ede7; --muted:#a79f95;
+           --line:#322d28; --accent:#d8a66a; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Segoe UI",Arial,Helvetica,sans-serif;
+    line-height:1.7; padding:32px 16px;
+  }
+  main{max-width:720px; margin:0 auto}
+  .card{
+    background:var(--card); border:1px solid var(--line);
+    border-radius:14px; padding:24px 22px; margin-bottom:20px;
+  }
+  h1{font-size:1.7rem; margin:0 0 4px}
+  h2{font-size:1.15rem; margin:22px 0 8px; color:var(--accent)}
+  p{margin:10px 0}
+  ul{margin:8px 0; padding-inline-start:22px}
+  li{margin:4px 0}
+  .sub{color:var(--muted); font-size:.95rem; margin:0}
+  a{color:var(--accent)}
+  .en{direction:ltr; text-align:left}
+  footer{color:var(--muted); font-size:.85rem; text-align:center; margin-top:8px}
+</style>
+</head>
+<body>
+<main>
+
+  <div class="card">
+    <h1>המתכונים שלי</h1>
+    <p class="sub">אפליקציית ספר מתכונים אישית לאנדרואיד</p>
+
+    <h2>מה האפליקציה עושה</h2>
+    <p>
+      ספר מתכונים אישי לטלפון: שמירה של מתכונים, עריכה שלהם, גרסאות שונות של אותו
+      מתכון, מסד נתונים של מרכיבים ויחידות מידה, אוספים ותגיות, חיפוש, מצב בישול
+      עם טיימר, והמרה של מתכון מצילום, מקישור, מקובץ Word או מ‑PDF לטקסט מסודר.
+    </p>
+
+    <h2>פרטיות בקצרה</h2>
+    <ul>
+      <li>אין חשבון, אין הרשמה, אין פרסומות ואין מדידת שימוש.</li>
+      <li>המתכונים נשמרים בטלפון עצמו.</li>
+      <li>גיבוי ל‑Google Drive הוא אופציונלי, ומגיע אל ה‑Drive של המשתמש עצמו בלבד.</li>
+      <li>אין שרת של האפליקציה, והמפתח אינו רואה את המתכונים של אף אחד.</li>
+    </ul>
+    <p><a href="privacy-recipes.html">מדיניות הפרטיות המלאה</a></p>
+
+    <h2>יצירת קשר</h2>
+    <p><a href="mailto:eran.maor76@gmail.com">eran.maor76@gmail.com</a></p>
+  </div>
+
+  <div class="card en" lang="en">
+    <h1>My Recipe Book</h1>
+    <p class="sub">A personal recipe-book app for Android</p>
+
+    <h2>What the app does</h2>
+    <p>
+      A personal recipe book for the phone: storing and editing recipes, keeping
+      several versions of the same recipe, an ingredient and unit database,
+      collections and tags, search, a cook mode with timers, and turning a photo,
+      a link, a Word file or a PDF of a recipe into structured text.
+    </p>
+
+    <h2>Privacy in short</h2>
+    <ul>
+      <li>No account, no sign-up, no ads, no analytics.</li>
+      <li>Recipes are stored on the device itself.</li>
+      <li>Google Drive backup is optional and goes only to the user's own Drive.</li>
+      <li>There is no application server, and the developer never sees anyone's recipes.</li>
+    </ul>
+    <p><a href="privacy-recipes.html">Full privacy policy</a></p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:eran.maor76@gmail.com">eran.maor76@gmail.com</a></p>
+  </div>
+
+  <footer>Eran Maor · 2026</footer>
+</main>
+</body>
+</html>
