@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מדיניות פרטיות - מעקב בריאות</title>
+<style>
+  :root { --bg:#faf9f6; --fg:#1d1b18; --muted:#5a5650; --accent:#3f7fb5; --card:#ffffff; --line:#e3e0da; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14161a; --fg:#eceae6; --muted:#a8a49d; --accent:#79b0dd; --card:#1c1f24; --line:#2c3037; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font-family: "Segoe UI", Arial, system-ui, sans-serif; line-height:1.7; }
+  .wrap { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; margin:16px 0; }
+  h2 { font-size:1.1rem; margin:0 0 10px; color:var(--accent); }
+  ul { margin:0; padding-inline-start:20px; }
+  li { margin:6px 0; }
+  a { color:var(--accent); }
+  code { background:rgba(63,127,181,.14); padding:2px 6px; border-radius:5px; font-size:.9em; direction:ltr; display:inline-block; }
+  .en { direction:ltr; text-align:left; }
+  footer { color:var(--muted); font-size:0.9rem; margin-top:32px; border-top:1px solid var(--line); padding-top:16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>מדיניות פרטיות</h1>
+  <p class="sub">מעקב בריאות - אפליקציית אנדרואיד אישית · עודכן ב-26 בספטמבר 2026</p>
+
+  <div class="card">
+    <h2>המידע שנאסף</h2>
+    <ul>
+      <li>האפליקציה אינה אוספת מידע אישי ואינה שולחת מידע לשרת כלשהו של המפתח. אין שרת כזה.</li>
+      <li>אין חשבון משתמש, אין הרשמה, אין פרסומות ואין כלי מדידה או אנליטיקה.</li>
+      <li>הדיווחים - מנות תרופות, דיווחי כאב, תסמינים, שינה, פעילויות ומעקבים אישיים - נשמרים במכשיר בלבד.</li>
+      <li>המפתח אינו רואה, אינו אוסף ואינו מקבל את נתוני אף משתמש.</li>
+      <li>לכל משתמש התקנה נפרדת ונתונים נפרדים. אין שיתוף נתונים בין משתמשים.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>השימוש בנתוני גוגל</h2>
+    <ul>
+      <li>מי שבוחר לחבר חשבון גוגל מעניק לאפליקציה הרשאה אחת בלבד: גישה לתיקייה הפרטית של האפליקציה בגוגל דרייב (ההרשאה <code>drive.appdata</code>).</li>
+      <li>זו תיקייה מוסתרת שנראית רק לאפליקציה עצמה. ההרשאה משמשת אך ורק כדי לכתוב, לקרוא ולמחוק את קובצי הגיבוי שהאפליקציה עצמה יצרה.</li>
+      <li>האפליקציה אינה ניגשת לקבצים אחרים בדרייב ואינה יכולה לראות אותם.</li>
+      <li>קובץ הגיבוי מכיל את נתוני האפליקציה של המשתמש: הדיווחים, רשימות התרופות, התסמינים, סוגי הפעילות והמעקבים שהמשתמש הגדיר, המקומות, ההערות וההגדרות.</li>
+      <li>המידע נשאר בחשבון הגוגל של המשתמש. הוא אינו מועבר, אינו נמכר ואינו משותף עם אף גורם, כולל המפתח.</li>
+      <li>המידע שמתקבל מגוגל אינו משמש לפרסום, ואינו משמש לפיתוח או לשיפור של מודלים של בינה מלאכותית.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>ניתוח בעזרת בינה מלאכותית - אופציונלי, ובמפתח של המשתמש</h2>
+    <ul>
+      <li>הניתוח כבוי כברירת מחדל. הוא פועל רק אם המשתמש הזין מפתח API משלו, של OpenAI או של Google Gemini, ורק כשהמשתמש מבקש ניתוח באופן יזום.</li>
+      <li>כשהמשתמש מבקש ניתוח, נשלח לספק שבחר סיכום של נתוני המעקב שלו בתקופה שבחר: מנות תרופות, דיווחי כאב ותסמינים, שינה, פעילויות, מעקבים אישיים, ונתוני מזג האוויר של אותם ימים.</li>
+      <li>לא נשלחים שם, כתובת דואר אלקטרוני או פרטי זיהוי אחרים.</li>
+      <li>השליחה נעשית מהמכשיר ישירות לספק, תחת המפתח והחשבון של המשתמש עצמו, וכפופה לתנאי השימוש ולמדיניות הפרטיות של אותו ספק. המפתח של האפליקציה אינו צד בבקשה ואינו רואה אותה.</li>
+      <li>שלב זה נפרד לחלוטין מהגיבוי לדרייב, ואינו עושה שימוש בהרשאת הדרייב או במידע שהתקבל ממנה.</li>
+      <li>המפתח שהמשתמש מזין נשמר במכשיר בלבד.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>מיקום ומזג אוויר</h2>
+    <ul>
+      <li>לכל דיווח אפשר לצרף מקום. המשתמש יכול לבחור מקום מרשימה, או להשתמש במיקום הנוכחי.</li>
+      <li>כשהמשתמש מבקש את המיקום הנוכחי, האפליקציה מבקשת מיקום מקורב מהמכשיר.</li>
+      <li>כדי לתרגם נקודת ציון לשם עיר, ולהביא את נתוני מזג האוויר של אותו מקום, נשלחות נקודות הציון לשירותי מזג אוויר ומיקום חיצוניים (Open-Meteo ו-BigDataCloud). לא נשלחים איתן דיווחים, תסמינים או כל נתון בריאותי.</li>
+      <li>האפליקציה אינה עוקבת אחר המיקום ברקע. מיקום מתקבל רק כשהמשתמש מבקש זאת.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>שמירה ומחיקה</h2>
+    <ul>
+      <li>נשמרים עשרת הגיבויים האחרונים, ובנוסף הגיבוי האחרון של כל אחד מארבעה-עשר הימים הקודמים. גיבויים ישנים יותר נמחקים אוטומטית.</li>
+      <li>מחיקה ידנית: בהגדרות האפליקציה אפשר להתנתק מגוגל דרייב, ואפשר למחוק את נתוני האפליקציה במכשיר.</li>
+      <li>ביטול ההרשאה: בעמוד ההרשאות של חשבון הגוגל, בכתובת
+        <a href="https://myaccount.google.com/permissions" dir="ltr">myaccount.google.com/permissions</a>.</li>
+      <li>מחיקת הגיבויים עצמם: בעמוד ניהול האחסון של דרייב, באזור של נתוני אפליקציות מוסתרים.</li>
+      <li>הסרת האפליקציה מהמכשיר מוחקת את כל הנתונים המקומיים.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>הרשאות במכשיר</h2>
+    <ul>
+      <li>התראות, התראות בזמן מדויק ופטור מחיסכון בסוללה - כדי שתזכורות יגיעו בזמן.</li>
+      <li>גישה לאינטרנט - למזג אוויר, לחיפוש מקומות, לגיבוי לדרייב ולניתוח בבינה מלאכותית.</li>
+      <li>מיקום מקורב - רק כשהמשתמש מבקש לצרף את המיקום הנוכחי לדיווח.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>הבהרה</h2>
+    <ul>
+      <li>האפליקציה היא כלי מעקב אישי. היא אינה מכשיר רפואי, אינה מאבחנת ואינה מהווה ייעוץ רפואי.</li>
+      <li>בכל שאלה רפואית יש לפנות לרופא.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>יצירת קשר</h2>
+    <ul>
+      <li>שאלות בנושא פרטיות: <a href="mailto:eran.maor76@gmail.com">eran.maor76@gmail.com</a></li>
+      <li>שינויים במדיניות יפורסמו בעמוד זה, עם תאריך עדכון חדש.</li>
+    </ul>
+  </div>
+
+  <div class="card en" lang="en">
+    <h2>Privacy policy (English)</h2>
+    <ul>
+      <li>Health Tracker (מעקב בריאות) is a personal Android app for logging as-needed medication, pain, symptoms, sleep, activities and custom trackers. It has no server, no user accounts, no ads and no analytics, and the developer never sees any user's data.</li>
+      <li>All reports and settings are stored on the device. Each user has their own install and their own data; nothing is shared between users.</li>
+      <li>If the user connects a Google account, the app requests one scope only: <code>drive.appdata</code>, access to the app's own hidden folder in the user's Google Drive.</li>
+      <li>That access is used solely to upload, list, download and delete the user's own backup files. The app cannot see or access any other file in Drive.</li>
+      <li>A backup file contains the user's own app data: reports, the medications, symptoms, activity types and custom trackers the user defined, places, notes and settings. It stays in the user's Google account and is never transferred, sold or shared with anyone, including the developer.</li>
+      <li>Data obtained through Google APIs is not used for advertising, and is not used to develop, improve or train generalized artificial intelligence or machine learning models.</li>
+      <li>AI analysis is optional and off by default. It runs only if the user enters their own OpenAI or Google Gemini API key, and only when the user asks for an analysis. A summary of that user's own log for the chosen period - doses, pain and symptom reports, sleep, activities, custom trackers and the weather for those days - is then sent from the device directly to that provider under the user's own key and account, subject to that provider's terms. No name, email address or other identifying details are sent. The developer is not a party to the request. This is separate from the Drive backup and uses no data obtained through the Drive scope.</li>
+      <li>Location and weather: when the user asks to attach their current location to a report, the app requests a coarse location from the device and sends the coordinates to external weather and geocoding services (Open-Meteo and BigDataCloud) to obtain a city name and that day's weather. No reports, symptoms or health data are sent with them, and the app never tracks location in the background.</li>
+      <li>Retention: the ten newest backups are kept, plus the last backup of each of the previous fourteen days; older ones are deleted automatically.</li>
+      <li>Deletion and revocation: disconnect Drive in the app's settings, revoke access at
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, delete the backups from Drive's storage management page (hidden app data), and uninstall the app to remove all local data.</li>
+      <li>This app is a personal tracking tool. It is not a medical device, does not diagnose, and is not medical advice.</li>
+      <li>Contact: <a href="mailto:eran.maor76@gmail.com">eran.maor76@gmail.com</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <a href="index.html">חזרה לעמוד האפליקציה</a> · <a href="../">כל האפליקציות</a>
+  </footer>
+</div>
+</body>
+</html>
